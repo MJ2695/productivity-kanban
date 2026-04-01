@@ -481,31 +481,109 @@ const TASKS = [
     "category": "learning",
     "goal_id": "goal_20260330_rlhf",
     "goal_title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
-    "priority": {
-      "quadrant": "Q3",
-      "abcde": "B",
-      "score": 58,
-      "reasoning": "Hard Apr 30 deadline, 31 days out \u2014 will become Q2 in a few days."
-    },
-    "status": "inbox",
-    "deadline": {
-      "date": "2026-04-30",
-      "type": "hard"
-    },
+    "priority": { "quadrant": "Q3", "abcde": "B", "score": 58, "reasoning": "Hard Apr 30 deadline, 31 days out." },
+    "status": "deleted",
+    "deadline": { "date": "2026-04-30", "type": "hard" },
     "duration_estimate": 480,
     "duration_adjusted": false,
     "is_project": false,
     "milestones": [],
     "snooze_count": 0,
     "start_date": "2026-04-06",
-    "time_block": {
-      "session": "evening"
-    },
+    "time_block": { "session": "evening" },
     "created_at": "2026-03-30T00:00:00Z",
     "done_at": null,
     "actual_duration": null,
-    "notes": "Read in full by Apr 30. ~8h estimated total reading time.",
+    "notes": "Replaced by 4 part tasks (task_20260331_rlhf1\u20134).",
     "raw_input": "finish reading reinforcement learning with human feedback by end of April"
+  },
+  {
+    "id": "task_20260331_rlhf1",
+    "title": "RLHF Book Part 1 \u2014 Intro & RL background (Ch. 1\u20133)",
+    "category": "learning",
+    "goal_id": "goal_20260330_rlhf",
+    "goal_title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
+    "priority": { "quadrant": "Q2", "abcde": "B", "score": 62, "reasoning": "First of 4 parts, starts today \u2014 builds foundation for the rest." },
+    "status": "active",
+    "deadline": { "date": "2026-04-08", "type": "soft" },
+    "duration_estimate": 120,
+    "duration_adjusted": false,
+    "is_project": false,
+    "milestones": [],
+    "snooze_count": 0,
+    "start_date": "2026-03-31",
+    "time_block": { "session": "evening" },
+    "created_at": "2026-03-31T00:00:00Z",
+    "done_at": null,
+    "actual_duration": null,
+    "notes": "Covers intro, motivation for RLHF, and RL fundamentals background.",
+    "raw_input": "RLHF book breakdown part 1 of 4"
+  },
+  {
+    "id": "task_20260331_rlhf2",
+    "title": "RLHF Book Part 2 \u2014 Learning from feedback & reward modeling (Ch. 4\u20136)",
+    "category": "learning",
+    "goal_id": "goal_20260330_rlhf",
+    "goal_title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
+    "priority": { "quadrant": "Q2", "abcde": "B", "score": 60, "reasoning": "Core of the book \u2014 preference learning and reward modeling." },
+    "status": "inbox",
+    "deadline": { "date": "2026-04-16", "type": "soft" },
+    "duration_estimate": 120,
+    "duration_adjusted": false,
+    "is_project": false,
+    "milestones": [],
+    "snooze_count": 0,
+    "start_date": "2026-04-09",
+    "time_block": { "session": "evening" },
+    "created_at": "2026-03-31T00:00:00Z",
+    "done_at": null,
+    "actual_duration": null,
+    "notes": "Covers preference data collection, reward modeling techniques.",
+    "raw_input": "RLHF book breakdown part 2 of 4"
+  },
+  {
+    "id": "task_20260331_rlhf3",
+    "title": "RLHF Book Part 3 \u2014 Policy optimization & PPO (Ch. 7\u20139)",
+    "category": "learning",
+    "goal_id": "goal_20260330_rlhf",
+    "goal_title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
+    "priority": { "quadrant": "Q2", "abcde": "B", "score": 59, "reasoning": "Technical core \u2014 PPO and policy optimization methods." },
+    "status": "inbox",
+    "deadline": { "date": "2026-04-23", "type": "soft" },
+    "duration_estimate": 120,
+    "duration_adjusted": false,
+    "is_project": false,
+    "milestones": [],
+    "snooze_count": 0,
+    "start_date": "2026-04-17",
+    "time_block": { "session": "evening" },
+    "created_at": "2026-03-31T00:00:00Z",
+    "done_at": null,
+    "actual_duration": null,
+    "notes": "Covers PPO, GRPO, and other policy optimization algorithms used in RLHF.",
+    "raw_input": "RLHF book breakdown part 3 of 4"
+  },
+  {
+    "id": "task_20260331_rlhf4",
+    "title": "RLHF Book Part 4 \u2014 RLHF in practice & open problems (Ch. 10\u2013end)",
+    "category": "learning",
+    "goal_id": "goal_20260330_rlhf",
+    "goal_title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
+    "priority": { "quadrant": "Q2", "abcde": "B", "score": 61, "reasoning": "Final section, hard Apr 30 deadline." },
+    "status": "inbox",
+    "deadline": { "date": "2026-04-30", "type": "hard" },
+    "duration_estimate": 120,
+    "duration_adjusted": false,
+    "is_project": false,
+    "milestones": [],
+    "snooze_count": 0,
+    "start_date": "2026-04-24",
+    "time_block": { "session": "evening" },
+    "created_at": "2026-03-31T00:00:00Z",
+    "done_at": null,
+    "actual_duration": null,
+    "notes": "Covers real-world RLHF pipelines, alignment challenges, open research questions.",
+    "raw_input": "RLHF book breakdown part 4 of 4"
   },
   {
     "id": "task_20260330_sfm1",
@@ -684,7 +762,10 @@ const GOALS = [
     "status": "active",
     "created_at": "2026-03-30T00:00:00Z",
     "linked_task_ids": [
-      "task_20260330_rlhf1"
+      "task_20260331_rlhf1",
+      "task_20260331_rlhf2",
+      "task_20260331_rlhf3",
+      "task_20260331_rlhf4"
     ]
   },
   {
@@ -703,7 +784,7 @@ const GOALS = [
   }
 ]
 
-const GENERATED_AT = "2026-03-31T14:31:48+00:00";
+const GENERATED_AT = "2026-03-31T15:45:00+00:00";
 </script>
 
 <style>
