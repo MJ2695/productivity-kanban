@@ -784,7 +784,7 @@ const GOALS = [
   }
 ]
 
-const GENERATED_AT = "2026-04-02T09:00:00+00:00";
+const GENERATED_AT = "2026-04-03T10:00:00+00:00";
 </script>
 
 <style>
@@ -1045,6 +1045,36 @@ body {
 .milestone-step.ms-done   { background: var(--q2); }
 .milestone-step.ms-active { background: #60A5FA; }
 .milestone-step.ms-inbox  { background: var(--border); }
+.milestone-current {
+  font-size: 11px;
+  color: var(--ink-2);
+  margin-top: 5px;
+  line-height: 1.4;
+  padding-left: 2px;
+}
+.milestone-current-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  margin-right: 4px;
+}
+
+/* ── GANTT MILESTONE ROWS ───────────────────────────────────────────── */
+.gantt-row.milestone-row { background: var(--surface-2); }
+.gantt-ms-label-col {
+  padding: 4px 14px 4px 26px;
+  min-width: 200px; max-width: 200px;
+  border-right: 1px solid var(--border-2);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.gantt-ms-label-title {
+  font-size: 11px; color: var(--ink-2); line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.gantt-ms-label-title.ms-done-text { color: var(--ink-3); text-decoration: line-through; }
+.gantt-bar.ms-bar { height: 10px; opacity: 0.75; }
 
 /* ── DONE INDICATOR ─────────────────────────────────────────────────── */
 .done-badge {
@@ -1302,10 +1332,15 @@ function buildCard(task) {
       return `<div class="milestone-step ${cls}"></div>`;
     }).join('');
     const done = task.milestones.filter(m => m.status === 'done').length;
+    const currentMs = task.milestones.find(m => m.status !== 'done');
+    const currentMsHtml = currentMs
+      ? `<div class="milestone-current"><span class="milestone-current-label">Next</span>${currentMs.title}</div>`
+      : '';
     milestoneHtml = `
       <div class="milestone-track">
         <div class="milestone-label">${done}/${task.milestones.length} milestones</div>
         <div class="milestone-steps">${steps}</div>
+        ${currentMsHtml}
       </div>
     `;
   }
@@ -1556,6 +1591,42 @@ function renderGantt() {
     const urgentStyle = isUrgentTask ? 'border: 1.5px solid #B91C1C;' : '';
     const label = task.title.length > 22 ? task.title.slice(0, 21) + '…' : task.title;
 
+    // Milestone sub-rows
+    let msRowsHtml = '';
+    if (task.milestones?.length) {
+      const totalMs = task.milestones.length;
+      task.milestones.forEach((ms, i) => {
+        const msStart = barLeft + Math.round((i / totalMs) * barWidth);
+        const msEnd   = barLeft + Math.round(((i + 1) / totalMs) * barWidth);
+        const msWidth = Math.max(1, msEnd - msStart);
+        const msLeftPct  = (msStart / TOTAL_DAYS) * 100;
+        const msWidthPct = (msWidth / TOTAL_DAYS) * 100;
+        const isMsDone = ms.status === 'done';
+        const isCurrent = !isMsDone && task.milestones.slice(0, i).every(m => m.status === 'done');
+        const msColor = isMsDone ? '#16A34A' : isCurrent ? '#3B82F6' : '#9CA3AF';
+        const msTitleClass = isMsDone ? 'gantt-ms-label-title ms-done-text' : 'gantt-ms-label-title';
+        const msBgCells = days.map(d => {
+          const cls = ['gantt-day-bg-cell', d.isToday ? 'today-col' : '', d.isWeekend ? 'weekend' : ''].join(' ').trim();
+          return `<div class="${cls}"></div>`;
+        }).join('');
+        msRowsHtml += `
+          <div class="gantt-row milestone-row" style="grid-template-columns:${gtc};">
+            <div class="gantt-ms-label-col">
+              <div class="${msTitleClass}" title="${ms.title}">
+                ${isMsDone ? '✓' : isCurrent ? '▶' : '○'} ${ms.title}
+              </div>
+            </div>
+            <div class="gantt-timeline-col" style="grid-column:2/${TOTAL_DAYS+2};position:relative;min-height:24px;">
+              <div class="gantt-day-bg" style="position:absolute;top:0;bottom:0;left:0;right:0;display:flex;">${msBgCells}</div>
+              <div class="gantt-today-line" style="left:${todayPct}%;"></div>
+              <div class="gantt-bar-container">
+                <div class="gantt-bar ms-bar" style="left:${msLeftPct}%;width:${msWidthPct}%;background:${msColor};">&nbsp;</div>
+              </div>
+            </div>
+          </div>`;
+      });
+    }
+
     return `
       <div class="gantt-row" style="grid-template-columns:${gtc};">
         <div class="gantt-label-col">
@@ -1582,7 +1653,8 @@ function renderGantt() {
             </div>
           </div>
         </div>
-      </div>`;
+      </div>
+      ${msRowsHtml}`;
   }).join('');
 
   container.innerHTML = `
