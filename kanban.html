@@ -970,7 +970,7 @@ const GOALS = [
     ]
   }
 ];
-const GENERATED_AT = "2026-04-08T15:00:00.000000";
+const GENERATED_AT = "2026-04-08T15:15:00.000000";
 </script>
 
 
@@ -1794,13 +1794,22 @@ function renderGantt() {
         const msFullStartDay = fullStartRelDay + Math.round((i / totalMs) * fullSpanDays);
         const msFullEndDay   = fullStartRelDay + Math.round(((i + 1) / totalMs) * fullSpanDays);
 
-        // Clamp to visible window; pin done milestones fully in the past to a 1-day mark at day 0
+        // Clamp to visible window
         let msCStart = Math.max(0, msFullStartDay);
         let msCEnd   = Math.min(TOTAL_DAYS, msFullEndDay);
-        if (msFullEndDay <= 0) {
-          if (!isMsDone) return;
-          msCStart = 0; msCEnd = 1;
+        if (msCEnd <= 0) {
+          if (isMsDone) {
+            // Tiny past indicator for done milestones
+            msCStart = 0; msCEnd = 1;
+          } else if (isCurrent) {
+            // Current milestone fell entirely before window — show from window start to today
+            msCStart = 0; msCEnd = DAYS_BEFORE + 1;
+          } else {
+            return;
+          }
         }
+        // Always extend current milestone at least to today
+        if (isCurrent) msCEnd = Math.max(msCEnd, DAYS_BEFORE + 1);
         const msWidth = Math.max(msCStart < TOTAL_DAYS ? 1 : 0, msCEnd - msCStart);
         if (msWidth === 0) return;
 
