@@ -233,7 +233,7 @@ const TASKS = [
       },
       {
         "title": "Survey existing GI AI diagnostic tools and literature",
-        "status": "inbox"
+        "status": "active"
       },
       {
         "title": "Synthesize findings and draft summary",
@@ -970,7 +970,7 @@ const GOALS = [
     ]
   }
 ];
-const GENERATED_AT = "2026-04-08T14:35:00.000000";
+const GENERATED_AT = "2026-04-08T15:00:00.000000";
 </script>
 
 
@@ -1754,7 +1754,7 @@ function renderGantt() {
     return `<div class="${cls}">${showLabel ? label : ''}</div>`;
   }).join('');
 
-  const rowsHtml = tasksWithDeadline.map(({ task, dl, startIdx, endIdx, dlIdx }) => {
+  const rowsHtml = tasksWithDeadline.map(({ task, dl, start, startIdx, endIdx, dlIdx }) => {
     const fill = CAT_FILL[task.category] || '#6B7280';
     const isDone = task.status === 'done';
     const isUrgentTask = isUrgent(task);
@@ -1778,20 +1778,35 @@ function renderGantt() {
     const urgentStyle = isUrgentTask ? 'border: 1.5px solid #B91C1C;' : '';
     const label = task.title.length > 22 ? task.title.slice(0, 21) + '…' : task.title;
 
-    // Milestone sub-rows
+    // Milestone sub-rows — positioned against FULL task timeline, not clamped bar
     let msRowsHtml = '';
     if (task.milestones?.length) {
       const totalMs = task.milestones.length;
+      const fullSpanDays = Math.max(1, Math.round((dl - start) / 86400000));
+      const fullStartRelDay = Math.round((start - windowStart) / 86400000);
+
       task.milestones.forEach((ms, i) => {
-        const msStart = barLeft + Math.round((i / totalMs) * barWidth);
-        const msEnd   = barLeft + Math.round(((i + 1) / totalMs) * barWidth);
-        const msWidth = Math.max(1, msEnd - msStart);
-        const msLeftPct  = (msStart / TOTAL_DAYS) * 100;
-        const msWidthPct = (msWidth / TOTAL_DAYS) * 100;
-        const isMsDone = ms.status === 'done';
+        const isMsDone  = ms.status === 'done';
         const isCurrent = !isMsDone && task.milestones.slice(0, i).every(m => m.status === 'done');
-        const msColor = isMsDone ? '#16A34A' : isCurrent ? '#3B82F6' : '#9CA3AF';
+        const msColor      = isMsDone ? '#16A34A' : isCurrent ? '#3B82F6' : '#9CA3AF';
         const msTitleClass = isMsDone ? 'gantt-ms-label-title ms-done-text' : 'gantt-ms-label-title';
+
+        const msFullStartDay = fullStartRelDay + Math.round((i / totalMs) * fullSpanDays);
+        const msFullEndDay   = fullStartRelDay + Math.round(((i + 1) / totalMs) * fullSpanDays);
+
+        // Clamp to visible window; pin done milestones fully in the past to a 1-day mark at day 0
+        let msCStart = Math.max(0, msFullStartDay);
+        let msCEnd   = Math.min(TOTAL_DAYS, msFullEndDay);
+        if (msFullEndDay <= 0) {
+          if (!isMsDone) return;
+          msCStart = 0; msCEnd = 1;
+        }
+        const msWidth = Math.max(msCStart < TOTAL_DAYS ? 1 : 0, msCEnd - msCStart);
+        if (msWidth === 0) return;
+
+        const msLeftPct  = (msCStart / TOTAL_DAYS) * 100;
+        const msWidthPct = (msWidth  / TOTAL_DAYS) * 100;
+
         const msBgCells = days.map(d => {
           const cls = ['gantt-day-bg-cell', d.isToday ? 'today-col' : '', d.isWeekend ? 'weekend' : ''].join(' ').trim();
           return `<div class="${cls}"></div>`;
