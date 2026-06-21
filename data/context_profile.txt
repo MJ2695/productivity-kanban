@@ -1,0 +1,138 @@
+# User Context Profile
+# Created: (set on first learning agent run)
+# Written by the Learning Agent. Read by Intake and Scheduler agents.
+# Format: [YYYY-MM-DD] #tag observation
+# Append only — never overwrite existing entries.
+#
+# ─────────────────────────────────────────────────────
+#
+# This file starts empty. The Learning Agent will begin populating it
+# after the first weekly review (Sunday 9am, or when manually triggered).
+#
+# Until then, agents use only explicit task data and goal definitions.
+#
+# ─────────────────────────────────────────────────────
+
+---
+Weekly review: 2026-05-17
+
+[2026-05-17] #velocity Zero tasks completed in the week of May 10–17. Since last review (Apr 16), only 4 tasks completed in 31 days: MICCAI #3 and #4 (academic, Apr 24), RSU transfer (finance, Apr 28), patent disclosure revision (work, Apr 28). Academic continues to dominate completions; learning has zero completions in 31 days.
+
+[2026-05-17] #velocity Learning tasks are in systemic slip. CS336 Week 1-2 has been "active" for 41 days (started Apr 6, deadline May 1 now 16 days past). RLHF Parts 2-4 are all at or past their deadlines: Part 2 overdue 19 days, Part 3 overdue 10 days, Part 4 overdue 2 days. The RLHF goal's target date (May 15) has passed with 75% of tasks incomplete. Flag learning tasks for priority recovery conversation.
+
+[2026-05-17] #goal-coverage CS336 goal: still 0/6 tasks completed after 7 weeks. Week 1-2 is the single longest-stalled active task in the system. If not done by next review, consider whether the goal should be restructured or rescheduled.
+
+[2026-05-17] #goal-coverage RLHF goal: missed target date (May 15). 1/4 tasks done. Recommend marking Parts 3 and 4 as the immediate priority given RLHF Part 2 is still technically in progress and blocking the sequence.
+
+[2026-05-17] #goal-coverage SF Marathon goal: 0/4 training phases completed. Base building (Phase 1) is 14 days past its soft deadline. Phase 2 (build) has already started on the calendar (start_date May 4) — but Phase 1 isn't done. Race is Jul 26 — 70 days out. This needs a catch-up check.
+
+[2026-05-17] #batching MICCAI #3 and #4 both completed same-day (Apr 24) in a single batch. Confirms Apr 16 pattern: paper review batches are consistently executed as single sessions. Pre-allocating consecutive morning blocks for each new batch remains valid advice.
+
+[2026-05-17] #duration-estimate Still only 1 actual_duration data point (task_op3t, 0.83×). actual_duration is not being filled in. Cannot calibrate estimates. Second consecutive review with this finding — the field may not be part of Mary's workflow.
+
+[2026-05-17] #goal-inferred Work tasks in the IP/disclosure track: GI AI patent disclosure (written + revised), EDOF/3D disclosure (active, 18 days overdue), GI AI research (done Apr 10). These suggest an ongoing IP submission track. Proposed inferred goal: "Submit patent disclosures for active research work." Awaiting confirmation.
+
+[2026-05-17] #goal-inferred Academic peer review goal was proposed last review (Apr 16) — no confirmation or dismissal logged. Repeating: 10 academic peer review tasks across Optica, Springer Nature, and MICCAI. Proposed: "Fulfill ongoing academic peer review commitments." Second request for confirmation.
+
+---
+Weekly review: 2026-05-24
+
+[2026-05-24] #velocity Zero completions this week (May 17–24). This extends the streak to 26 consecutive days with no task completion (last done: Apr 28). The longest gap in the full history. All active work is external-deadline driven; self-directed tasks have produced no completions in almost a month.
+
+[2026-05-24] #velocity Hard pattern confirmed across full history: every task with an external hard deadline has been completed on time (10/10 academic, 4 work hard-deadline tasks). Self-directed learning tasks with soft deadlines: 1/10 completed (RLHF Part 1 only). The completion mechanism appears to be external accountability, not internal scheduling.
+
+[2026-05-24] #goal-coverage RLHF goal expired: target date May 15 passed 9 days ago, 1/4 tasks done. RLHF Part 2 has been "active" for 45 days against a 120-min estimate — functionally stalled, not in progress. Parts 3 and 4 are inbox tasks past their deadlines. The goal needs to be explicitly rescheduled or closed.
+
+[2026-05-24] #goal-coverage CS336 goal: Week 1–2 task has been "active" for 48 days with no completion. CS336 A1 is also now "active" (start_date May 1) — two sequential tasks simultaneously active, prerequisite unresolved. Zero of six tasks done in 8 weeks. Consider whether weekly progress check-ins are needed to keep this goal moving.
+
+[2026-05-24] #goal-coverage SF Marathon (Jul 26): Phase 1 and Phase 2 are simultaneously "active" — same structural gap as CS336. Race is 63 days out. If training is actually happening, it's not being logged as completions. If it's not happening, 63 days is borderline for half-marathon readiness starting from base building.
+
+[2026-05-24] #snooze-pattern EDOF disclosure (task_20260420_ed2b) has been "active" for 31 days, soft deadline 25 days past, estimate 60 min. No snooze recorded but behaviorally avoided. Pattern: writing tasks with soft deadlines and no external accountability get indefinitely deferred even when similar writing tasks with hard deadlines (patent disclosure Apr 22) get done immediately. Soft deadline = effectively no deadline for unstructured writing.
+
+[2026-05-24] #goal-inferred "Fulfill ongoing academic peer review commitments" still unconfirmed after 5 weeks of proposals (Apr 16 and May 17). "Submit patent disclosures for active research work" unconfirmed after 1 week. Both awaiting confirmation or dismissal.
+
+---
+Weekly review: 2026-04-16
+
+[2026-04-16] #velocity Academic peer review is by far the dominant completed-task category: 8 of 15 completed tasks are paper reviews (Optica, Springer Nature, MICCAI). High throughput here — these consistently get done on time or early.
+
+[2026-04-16] #batching Paper reviews arrive in batches of 2–3 from the same journal/conference every 2–3 weeks. All are scheduled morning. Pattern is reliable — when a new batch is assigned, pre-allocate 2–3 consecutive morning blocks immediately rather than spreading start dates.
+
+[2026-04-16] #velocity Learning tasks lag behind other categories. Only 1 of 6+ learning tasks completed (RLHF Part 1), and it finished 6 days after its soft deadline (due Apr 8, done Apr 14). RLHF Part 2 is due today (Apr 16) and still active. CS336 Week 1–2 has been active since Apr 6 with no completion recorded.
+
+[2026-04-16] #goal-coverage CS336 goal has 0 completed tasks after ~3 weeks of tracking. The first task (Week 1–2 setup) is marked active but not done. Flag if still not complete by next weekly review.
+
+[2026-04-16] #duration-estimate Only 1 of 15 completed tasks has actual_duration recorded (task_20260325_op3t: 90 min estimated, 75 min actual). Insufficient data for calibration. actual_duration is almost never being filled in — estimates cannot improve without this data.
+
+[2026-04-16] #goal-inferred Cluster of 8 academic peer review tasks (Optica, Springer Nature x5, MICCAI x2) has no named goal. Proposed: "Fulfill ongoing academic peer review commitments." Awaiting confirmation.
+---
+
+---
+Weekly review: 2026-05-31
+
+[2026-05-31] #velocity 2 tasks completed this week (May 25–31): color performance report (work, hard deadline May 28) and Springer Nature review (academic, hard deadline May 30). Breaks 26-day zero-completion streak. Both triggered by external hard deadlines — pattern holds for 3rd consecutive review.
+
+[2026-05-31] #velocity Hard-deadline completion record: 13/13 (100%) all-time. Soft-deadline self-directed tasks: 1/16 (6%). EDOF disclosure now 32 days past soft deadline with zero progress. Soft deadline = effectively no deadline for unstructured work.
+
+[2026-05-31] #goal-coverage CS336: 0/6 tasks done after 65 days. A1 soft deadline was today (May 31) — not completed. Two tasks simultaneously "active" for 55 and 30 days. Recommend goal restructure conversation if still 0/6 at next review.
+
+[2026-05-31] #goal-coverage RLHF goal expired May 15 (16 days ago), 1/4 tasks done. Part 2 "active" for 52 days against a 120-min estimate — functionally stalled. Decision needed: reschedule or close.
+
+[2026-05-31] #goal-coverage SF Marathon (Jul 26): race is 56 days out. Phases 1 and 2 still simultaneously "active," neither done. 56 days is borderline for half-marathon readiness if training hasn't started. Worth a training status check.
+
+[2026-05-31] #batching NeurIPS 2026 batch: 4 reviews assigned, all due Jun 25. Start dates already staggered Jun 2 / 9 / 16 / 23 — consistent with established batching pattern.
+
+[2026-05-31] #goal-inferred "Fulfill ongoing academic peer review commitments" — 4th consecutive week proposed, no response. Total academic review backlog now 5 tasks (4 NeurIPS + EDOF track). Recommend confirming or dismissing.
+---
+
+---
+Weekly review: 2026-06-07
+
+[2026-06-07] #velocity 0 tasks completed this week (Jun 1–7). Last completion: May 30 (Springer Nature review). Hard-deadline completion record unchanged at 14/14 (100%). Self-directed soft-deadline tasks: 1/16 (6%) all-time. NeurIPS #1 active since Jun 2 but not yet done — deadline Jun 25 is 18 days out, consistent with prior pattern of completing hard-deadline academic tasks closer to the date.
+
+[2026-06-07] #goal-coverage CS336 goal: NEWLY CLOSED since last review (May 31). All 6 tasks deleted, 0 completed. This is the first goal in the system abandoned with 0% task completion rate after 10 weeks. Pattern: large self-directed learning goals with no external accountability and soft deadlines only are not viable without structural changes (check-ins, accountability partner, or hard external commitments).
+
+[2026-06-07] #goal-coverage SF Marathon goal: NEWLY CLOSED since last review (May 31). All 4 training phase tasks deleted, race Jul 26 is 49 days away. Training tracking has been dropped entirely. Half Dome project (Aug 22) is still active — its notes reference marathon training providing cardio base, and one open milestone explicitly mentions "marathon training." Worth confirming whether the race is still happening and whether training is occurring informally.
+
+[2026-06-07] #goal-coverage RLHF goal: still active, target date May 15 now 23 days expired. Part 2 "active" for 59 days against a 120-min estimate — no completion logged. Parts 3 and 4 are inbox with start dates 39 and 30 days past. Decision needed by next review: reschedule with concrete dates or close. Leaving it active without a new target date is producing no movement.
+
+[2026-06-07] #goal-inferred Half Dome project (task_20260419_hd1a) is a 7-milestone, hard-deadline project (Aug 22, 76 days out) with no linked goal_id. 2/7 milestones done (permit, lodging). Active for 47 days with no milestone progress since creation. Proposed: add an explicit goal "Summit Half Dome — Aug 22, 2026." The marathon training closure makes the elevation prep milestone ambiguous and may need updating.
+
+[2026-06-07] #snooze-pattern EDOF disclosure (task_20260420_ed2b) now 39 days past soft deadline, "active" for 48 days. Still no progress. Confirms the pattern from May 24 review: soft deadline = no deadline for unstructured writing without external accountability. This task has now outlasted two consecutive review cycles without movement. Consider converting soft deadline to hard or creating an external commitment.
+
+[2026-06-07] #goal-inferred "Fulfill ongoing academic peer review commitments" — 5th consecutive week proposed, no response. NeurIPS batch (4 tasks, Jun 25) now in progress. Recommend confirming or dismissing this proposed goal; the pattern is well-established across 5 months of data (15 academic review tasks from Optica, Springer, MICCAI, NeurIPS).
+---
+
+---
+Weekly review: 2026-06-14
+
+[2026-06-14] #velocity 0 tasks completed this week (Jun 7–14). Last completion: May 30 (Springer Nature review) — now 15 days ago. Hard-deadline completion record unchanged at 14/14 (100%). Soft-deadline self-directed completion: 1/16 (6%). Pattern unchanged for 8 consecutive weekly reviews.
+
+[2026-06-14] #batching NeurIPS Jun 25 deadline is 11 days away with 4 reviews still pending (2 active, 2 inbox). Based on historical pattern (100% hard-deadline academic completion), expect a completion burst near Jun 25. Staggered start dates Jun 2/9/16/23 may not drive actual start times — prior batches (Springer Apr 17 batch, MICCAI Apr 16 batch) show reviews are consistently done in a concentrated cluster within the final week. Recommended: pre-allocate 4 dedicated morning blocks Jun 20–25 rather than relying on staggered scheduling. Springer Nature review due Jun 29 follows immediately after, making Jun 20–29 the heaviest academic week on record.
+
+[2026-06-14] #goal-coverage RLHF goal: target date May 15 now 30 days expired. RLHF Part 2 has been "active" for 66 days against a 120-minute estimate — unchanged since Apr 9. No completion, no update, no reschedule across 8 weekly reviews. This goal is producing no movement and its status needs an explicit decision: reschedule with a concrete new target date or close. Leaving it "active" is generating misleading active-task load.
+
+[2026-06-14] #goal-coverage Half Dome (Aug 22, 69 days out): one open milestone reads "Add stair/hill sessions to marathon training (build elevation tolerance)" — this milestone references SF Marathon training as its execution vehicle, but the SF Marathon goal was closed Jun 7 with all training tasks deleted. The milestone is now orphaned. Elevation prep for Half Dome needs to be restated as standalone stair/hill sessions independent of marathon training, or a new explicit plan created. 5 of 7 milestones remain open with no milestone completions since task creation (Apr 19 — 56 days ago).
+
+[2026-06-14] #goal-inferred "Fulfill ongoing academic peer review commitments" — 6th consecutive week proposed, no response. 5 reviews currently pending (NeurIPS ×4 due Jun 25, Springer Nature due Jun 29). Total history: 15 academic review tasks across 5 journals/conferences over 12 weeks. This is clearly a recurring structural commitment, not episodic. Recommend confirming or explicitly dismissing.
+
+[2026-06-14] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 55 days "active," 46 days past soft deadline. No progress logged across 4 consecutive reviews. Alongside RLHF Part 2 (66 days active, soft deadline), this confirms a clear two-tier system: tasks with hard external deadlines get done (14/14), tasks with soft deadlines and no external accountability are indefinitely deferred regardless of time elapsed. Creating an external commitment (submitting a draft to a colleague, setting a meeting) appears to be the only reliable activation mechanism for this category.
+---
+
+---
+Weekly review: 2026-06-21
+
+[2026-06-21] #velocity 2 tasks completed this week (Jun 14–21): NeurIPS review #1 (done Jun 15) and NeurIPS review #2 (done Jun 18). Both academic, hard-deadline (Jun 25). Hard-deadline completion record: 16/16 (100%). Soft-deadline completion: 1/16 (6%). Pattern unchanged for 9 consecutive weekly reviews.
+
+[2026-06-21] #batching NeurIPS completion pattern confirmed: despite staggered start dates (Jun 2 / Jun 9), reviews #1 and #2 completed in a burst (Jun 15, Jun 18) — not near their scheduled start dates. Reviews #3 and #4 are due Jun 25 (4 days out); expect completion by Jun 23–24 based on historical burst pattern. Staggered start scheduling is decorative; deadline proximity drives actual execution.
+
+[2026-06-21] #goal-coverage RLHF goal: target date May 15 now 37 days expired. Part 2 "active" for 73 days against a 120-min estimate — no change since Apr 9. Parts 3 and 4 remain inbox, deadlines 37 and 45 days past. After 9 weekly reviews with zero movement, this goal should be explicitly closed or given a new concrete date with a hard external commitment attached to activate it.
+
+[2026-06-21] #goal-coverage Half Dome (Aug 22, 62 days out): 0/5 open milestones progressed since task creation 63 days ago. The stair/hill elevation prep milestone (originally tied to SF Marathon training) is orphaned — marathon goal closed Jun 7 with all tasks deleted. No standalone execution plan exists for elevation prep. 62 days is still workable if prep begins this week; recommend converting open milestones into discrete scheduled tasks.
+
+[2026-06-21] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 62 days "active," 53 days past soft deadline. 5 consecutive reviews with no progress. Also notable: Springer Nature Jun 29 review (task_20260608_sn1x) was deleted before completion — first academic review to be deleted in full history (vs. 16 completed). May indicate assignment was declined; if intentional, this is a useful precedent for filtering low-value commitments before accepting them.
+
+[2026-06-21] #goal-inferred "Fulfill ongoing academic peer review commitments" — 7th consecutive week proposed, no response. Full history: 17 academic review tasks across 5 venues over 13 weeks. This is a structural recurring commitment. Recommend confirming or explicitly dismissing.
+
+[2026-06-21] #goal-inferred Half Dome goal (proposed Jun 7): no confirmation or dismissal. Repeating: task_20260419_hd1a is a 7-milestone hard-deadline project (Aug 22) with no linked goal_id. Proposed: "Summit Half Dome — Aug 22, 2026." Second request.
+---

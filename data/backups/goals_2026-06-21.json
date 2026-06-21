@@ -1,0 +1,46 @@
+[
+  {
+    "id": "goal_20260327_cs336",
+    "title": "Complete Stanford CS336 (Language Modeling from Scratch)",
+    "description": "Work through all 5 assignments of Stanford's CS336 course, building a language model from scratch — covering tokenization, transformer architecture, GPU systems, scaling laws, data processing, and RL alignment.",
+    "target_date": "2026-12-31",
+    "status": "closed",
+    "created_at": "2026-03-27T00:00:00Z",
+    "linked_task_ids": [
+      "task_20260327_cs1a",
+      "task_20260327_cs2b",
+      "task_20260327_cs3c",
+      "task_20260327_cs4d",
+      "task_20260327_cs5e",
+      "task_20260327_cs6f"
+    ]
+  },
+  {
+    "id": "goal_20260330_rlhf",
+    "title": "Finish reading \"Reinforcement Learning with Human Feedback\"",
+    "description": "Read the full book by end of April 2026.",
+    "target_date": "2026-05-15",
+    "status": "active",
+    "created_at": "2026-03-30T00:00:00Z",
+    "linked_task_ids": [
+      "task_20260331_rlhf1",
+      "task_20260331_rlhf2",
+      "task_20260331_rlhf3",
+      "task_20260331_rlhf4"
+    ]
+  },
+  {
+    "id": "goal_20260330_sfmarathon",
+    "title": "Run SF Marathon (First Half) — July 26, 2026",
+    "description": "Complete the first half of the San Francisco Marathon on 7/26/2026. ~13.1 miles through SF.",
+    "target_date": "2026-07-26",
+    "status": "closed",
+    "created_at": "2026-03-30T00:00:00Z",
+    "linked_task_ids": [
+      "task_20260330_sfm1",
+      "task_20260330_sfm2",
+      "task_20260330_sfm3",
+      "task_20260330_sfm4"
+    ]
+  }
+]
