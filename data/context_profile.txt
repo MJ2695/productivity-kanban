@@ -168,3 +168,109 @@ Weekly review: 2026-07-05
 
 [2026-07-05] #goal-coverage RLHF goal: target date May 15 now 51 days expired. RLHF Part 2 "active" for 87 days against a 120-min estimate — longest-running stalled non-project task in the system. 11 consecutive reviews with zero movement since Apr 14 completion. Close or assign a new concrete target date with a hard external commitment; organic progress has not occurred and will not occur under current conditions.
 ---
+
+---
+Weekly review: 2026-07-12
+
+[2026-07-12] #velocity 0 tasks completed this week (Jul 5–12). Hard-deadline all-time record: 20/20 (100%). Soft-deadline self-directed: 1/16 (6%). Pattern unchanged for 12 consecutive weekly reviews. No new academic review batch assigned.
+
+[2026-07-12] #goal-coverage SF Marathon (Jul 26) is 14 days out — first time it enters the 72h-equivalent urgency band for a goal-level event. Goal was closed Jun 7, all training phase tasks deleted. Half Dome task (task_20260419_hd1a) explicitly states "Marathon training (through Jul 26) provides cardio base." Race status is unknown; whether it's happening determines the validity of the Half Dome cardio-base assumption and the elevation prep sequencing.
+
+[2026-07-12] #goal-coverage Half Dome (Aug 22, 41 days out): 0/5 open milestones progressed in 84 days since task creation (Apr 19). Post-marathon prep window (Jul 26–Aug 22) is only 27 days. The stair/hill elevation prep milestone must begin this week — it is the only milestone with enough lead time left. If the SF Marathon is confirmed, the cardio base is in place; if not, elevation prep becomes even more urgent as a standalone effort. 41 days is the last comfortable window.
+
+[2026-07-12] #snooze-pattern Book trip to Atkins Museum (task_20260619_atk1): soft deadline Jul 15 (3 days away). Task has been active since Jun 19 (23 days) with no completion logged. Given soft-deadline completion rate of 1/16 (6%) across all history, high probability of missing Jul 15 without a concrete booking action taken today.
+
+[2026-07-12] #goal-coverage RLHF goal: target date May 15 now 58 days expired. RLHF Part 2 "active" for 94 days against a 120-min estimate. 12 consecutive reviews with zero movement. Structural non-starter without hard external accountability — decision needed.
+
+[2026-07-12] #goal-inferred "Fulfill ongoing academic peer review commitments" — 9th consecutive week proposed, no response. Full history: 20 completed reviews across Optica, Springer Nature, MICCAI, NeurIPS over 16 weeks. Confirm or explicitly dismiss.
+
+[2026-07-12] #goal-inferred "Summit Half Dome — Aug 22, 2026" — proposed Jun 7, repeated Jun 21, Jun 28, Jul 5. Fourth request. Prep window is narrowing; goal formalization needed to convert open milestones into scheduled tasks before it's too late.
+---
+
+---
+Weekly review: 2026-08-02
+
+[2026-08-02] #velocity 0 tasks completed this week (Jul 26–Aug 2). Hard-deadline all-time record: 20/20 (100%). Soft-deadline self-directed: 1/16 (6%). Pattern unchanged for 12 consecutive weekly reviews.
+
+[2026-08-02] #goal-coverage Half Dome (Aug 22, 20 days out): CRITICAL. 0/5 open milestones progressed in 105 days since task creation (Apr 19). The "practice hike with 2,000+ ft gain (post-marathon, late Jul)" window has now closed without completion. The "long training hike 10+ miles with full pack (early Aug)" milestone must happen within the next 5 days (by Aug 7) — this is the last window for meaningful physical preparation before the summit. Remaining prep milestones: gear check/shakeout hike (mid-Aug), then summit day (Aug 22). SF Marathon race day was Jul 26 — outcome still not logged; whether the race was completed determines the Half Dome cardio base assumption.
+
+[2026-08-02] #goal-coverage RLHF goal: target date May 15 now 79 days expired. RLHF Part 2 "active" for 115 days against a 120-min estimate — no change since Apr 9. 14th consecutive review with zero movement on Parts 2–4. Longest-running functionally-stalled task in the system. Close or reschedule with a concrete external commitment — organic movement will not occur under current conditions.
+
+[2026-08-02] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 101 days "active," 95 days past soft deadline. 8th consecutive review with zero progress. RLHF Part 2 (115 days active) and EDOF disclosure share identical profiles: unstructured intellectual work, soft deadline, no external accountability. Both will continue to drift indefinitely. The only reliable activation pattern observed in 12 weeks of data is a hard external commitment (deadline to a colleague, a scheduled meeting). Apply that mechanism to both tasks or close them.
+
+[2026-08-02] #velocity No new academic review batch has been assigned since NeurIPS was completed Jun 24 — a 5-week gap. This is the longest period without a new batch in the 19-week history. Worth monitoring: if the pattern of consistent academic review intake resumes, the new batch will likely arrive in the next 1–2 weeks.
+
+[2026-08-02] #goal-inferred "Fulfill ongoing academic peer review commitments" — 11th consecutive week proposed, no response. Full history: 20 completed reviews across Optica, Springer Nature, MICCAI, NeurIPS over 19 weeks. Confirm or explicitly dismiss.
+
+[2026-08-02] #goal-inferred "Summit Half Dome — Aug 22, 2026" — proposed Jun 7, repeated Jun 21, Jun 28, Jul 5, Jul 12, Jul 26. Sixth request. 20 days remain; goal formalization would enable immediate task creation from open milestones before the prep window closes entirely.
+---
+
+---
+Weekly review: 2026-08-16
+
+[2026-08-16] #velocity 0 tasks completed this week (Aug 9–16). Hard-deadline all-time record: 21/21 (100%). Soft-deadline self-directed: 1/16 (6%). Pattern unchanged for 14 consecutive weekly reviews.
+
+[2026-08-16] #velocity RLHF per-chapter hypothesis failed: Ch. 7 moved to "active" Aug 3 (13 days ago), still not completed as of Aug 16. The Aug 9 review hypothesized that per-chapter granularity (40 min blocks vs. 120 min part-based) might be the structural unlock. It has not been. Ch. 7 has stalled proportionally as long as the old part-based tasks. Granularity is not the activation variable — hard external accountability remains the only reliable mechanism observed across all learning tasks.
+
+[2026-08-16] #goal-coverage RLHF goal: Ch. 7 stalled 13 days as "active." Ch. 8–17 all in inbox with scheduled start dates Aug 4–17 (all overdue). Target date May 15 now 93 days expired. 11 chapters remain, ~40 min each (~7 hours total). The Aug 17 final deadline (Ch. 17) expires tomorrow. Completing this goal now requires deliberate multi-chapter batch sessions this week — no structured deadline pressure remains.
+
+[2026-08-16] #goal-coverage Half Dome (Aug 22, 6 days out): CRITICAL. "Long training hike 10+ miles with full pack (early Aug)" — window has now definitively closed without completion (Aug 9 review noted must occur "this weekend Aug 8–9 or next Aug 15–16"; Aug 15–16 is today). Only remaining prep milestone before summit: "Gear check + shakeout hike (mid-Aug)" — must happen Aug 16–17. Summit day is Aug 22. This is the last scheduled check in before the climb.
+
+[2026-08-16] #goal-inferred Japanese language: second data point. JLPT N2 registration (task_20260803_jlpt1, due Aug 21) and the Aug 9 flag are now 2 of 3 required data points. N2 is an advanced Japanese certification. If a third Japanese study/test/language task appears, threshold for formal goal inference is met. Proposed goal pending: "Achieve JLPT N2 certification."
+---
+
+---
+Weekly review: 2026-08-09
+
+[2026-08-09] #velocity 2 tasks completed this week (Aug 2–8): "Submit final NeurIPS review" (academic, hard deadline Aug 2, done Aug 2) and "RLHF Book Part 2" (learning, soft deadline Apr 28, done Aug 2 — 96 days overdue). Hard-deadline all-time record: 21/21 (100%). RLHF Part 2 completing is notable — it had been stalled for 115 days, the longest active stall in system history. This is only the 2nd soft-deadline learning task completed in the full 19-week history.
+
+[2026-08-09] #goal-coverage RLHF goal: major structural change this week. Parts 3 and 4 were deleted and replaced with 11 per-chapter tasks (Ch. 7–17), each ~40 min, deadlines Aug 3–17. Ch. 7 is now active. Part 2 completing + chapter-level restructure represents the first real RLHF progress since Apr 14. Hypothesis: the prior part-based structure (120-min ambiguous blocks) was the friction point; per-chapter granularity may be the structural change that enables completion. Monitor whether Ch. 7 completes this week or stalls again.
+
+[2026-08-09] #batching RLHF Ch. 7–17: 11 chapters at ~40 min each are scheduled individually in "evening." At that granularity, batching 2–3 chapters per session would complete the book in 4–5 focused evenings rather than 11 separate sessions. If Ch. 7 gets done, consider suggesting a batch-session approach for the remaining chapters given the Aug 17 final deadline.
+
+[2026-08-09] #goal-coverage Half Dome (Aug 22, 13 days out): CRITICAL. The "practice hike with 2,000+ ft gain (post-marathon, late Jul)" milestone window has now closed without any completion logged. 3 milestones remain: "Long training hike 10+ miles with full pack (early Aug)" — this window expires within days; "Gear check + shakeout hike (mid-Aug)"; "Summit day Aug 22." The long training hike must happen this weekend (Aug 8–9) or the next (Aug 15–16) — no later. This is the highest-urgency item in the current active task list that has no hard deadline forcing action.
+
+[2026-08-09] #goal-inferred New task: "Register for N2 JLPT exam" (created Aug 3, deadline Aug 21, learning, afternoon session). N2 is an advanced Japanese certification. Single data point — insufficient for goal inference (need 3). Note for tracking: if Japanese study tasks appear, this may signal an active Japanese language goal forming.
+
+[2026-08-09] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 108 days "active," 101 days past soft deadline. 9th consecutive review with zero progress. No change expected without a hard external commitment (booking a meeting, submitting a draft to a colleague). This task is functionally equivalent to deleted under current conditions.
+
+[2026-08-09] #goal-inferred "Fulfill ongoing academic peer review commitments" — 12th consecutive week proposed, no response. Full history: 21 completed reviews across Optica, Springer Nature, MICCAI, NeurIPS over 20 weeks. Confirm or explicitly dismiss.
+
+[2026-08-09] #goal-inferred "Summit Half Dome — Aug 22, 2026" — proposed Jun 7, repeated Jun 21, Jun 28, Jul 5, Jul 12, Jul 26, Aug 2. Seventh request. 13 days remain; goal formalization now has limited practical value but would enable milestone-to-task conversion for the remaining 3 open milestones.
+---
+
+---
+Weekly review: 2026-09-20
+
+[2026-09-20] #velocity 0 tasks completed since Aug 2 — now 49 days without a completion. Hard-deadline all-time record: 21/21 (100%) for regular tasks. Note: Half Dome project (hard deadline Aug 22) is now 29 days past its deadline with task status still "active" and no done_at logged — outcome unconfirmed (may have been completed informally, consistent with SF Marathon pattern where goal was closed with outcome never logged).
+
+[2026-09-20] #goal-coverage Half Dome (task_20260419_hd1a): hard deadline Aug 22 has passed. All 5 remaining milestones, including "Hike Half Dome — summit day Aug 22," remain open. Task status is "active" with no done_at. Given SF Marathon history (goal closed with no outcome logged), informal completion without system update is plausible. Explicit confirmation needed to close or update the task.
+
+[2026-09-20] #goal-coverage RLHF goal: Ch. 7 has been "active" since Aug 3 — now 48 days stalled, longer than the original part-based tasks it replaced. Ch. 8–17 all remain inbox with scheduled start dates Aug 4–17, all 33–46 days overdue. Per-chapter restructure hypothesis has definitively failed: granularity change did not produce completions. Hard external accountability remains the only proven activation mechanism. Target date May 15 is now 128 days expired.
+
+[2026-09-20] #goal-inferred Japanese language: JLPT N2 registration (task_20260803_jlpt1) has been in the system since Aug 3 (48 days). Soft deadline Aug 21 has passed — either registration was completed or the window was missed. N2 is an advanced Japanese certification. Combined with the Aug 16 note (2 of 3 data points), the 3-point threshold is now met. Proposed goal: "Achieve JLPT N2 certification." Awaiting confirmation.
+
+[2026-09-20] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 153 days "active," 144 days past soft deadline. 10th consecutive review with zero progress. Longest-deferred task in the full system history. Functionally equivalent to deleted under current conditions — needs an explicit close decision or a hard external commitment (booked meeting, draft sent to a colleague).
+
+[2026-09-20] #duration-estimate actual_duration is still not being populated — 16th consecutive review. 1 data point across 26 weeks of history. Duration estimates cannot be calibrated. This field is not part of Mary's current workflow; consider removing or making it an optional prompt at task completion.
+
+[2026-09-20] #goal-inferred "Fulfill ongoing academic peer review commitments" — 13th consecutive week proposed, no response. Full history: 21 completed reviews across Optica, Springer Nature, MICCAI, NeurIPS over 26 weeks. No new batch assigned since Aug 2 (7 weeks — longest gap in history, possibly a summer seasonal pause). Confirm or explicitly dismiss.
+---
+
+---
+Weekly review: 2026-07-26
+
+[2026-07-26] #velocity 1 task completed Jul 12–26: Atkins Museum trip (personal, soft deadline Jul 15, done Jul 13 — 2 days early). Hard-deadline all-time record: 20/20 (100%). This is the first soft-deadline personal task completed *before* its deadline in the full 18-week history. The Jul 12 review explicitly flagged it as "3 days out, high-risk" — it was completed the next day. Explicit near-deadline proximity callouts in weekly reviews appear to be an activation mechanism for borderline soft-deadline tasks.
+
+[2026-07-26] #goal-coverage Half Dome (Aug 22, 27 days out): CRITICAL. 0/5 open milestones progressed in 98 days since task creation (Apr 19). The "practice hike with 2,000+ ft gain (post-marathon, late Jul)" milestone window has now closed — late July is today. Next milestone: "Long training hike 10+ miles with full pack (early Aug)" must begin by Aug 1–7. Then gear check/shakeout mid-Aug. Physical prep window is 27 days with no logged training. If SF Marathon (Jul 26) was completed, the cardio base is in place; stair/elevation work is the remaining gap.
+
+[2026-07-26] #goal-coverage SF Marathon goal: race day was today (Jul 26). Goal was closed Jun 7 with all training phase tasks deleted — outcome not tracked in the system. If the race was run, the Half Dome cardio base assumption holds. If not, elevation prep carries added urgency with no cardio base established.
+
+[2026-07-26] #goal-coverage RLHF goal: target date May 15 now 72 days expired. RLHF Part 2 "active" for 108 days against a 120-min estimate — no change since Apr 9. 13th consecutive review with zero movement on Parts 2–4. Structural non-starter under current conditions (soft deadline, no external accountability). Decision required: close or reschedule with a hard external commitment.
+
+[2026-07-26] #snooze-pattern EDOF disclosure (task_20260420_ed2b): 97 days "active," 88 days past soft deadline — longest-deferred task in the full system history. 7th consecutive review with no progress. Pattern confirmed: unstructured writing tasks with soft deadlines and no external accountability do not complete regardless of elapsed time or urgency scoring.
+
+[2026-07-26] #goal-inferred "Fulfill ongoing academic peer review commitments" — 10th consecutive week proposed, no response. Full history: 20 completed reviews across Optica, Springer Nature, MICCAI, NeurIPS over 18 weeks. This is a structural recurring commitment. Confirm or explicitly dismiss.
+
+[2026-07-26] #goal-inferred "Summit Half Dome — Aug 22, 2026" — proposed Jun 7, repeated Jun 21, Jun 28, Jul 5, Jul 12. Fifth request. 27 days remain; goal formalization needed to convert open milestones into scheduled tasks before the prep window closes entirely.
+---
